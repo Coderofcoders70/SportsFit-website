@@ -605,9 +605,9 @@ class ProductPage:
                 .features {{ list-style: none; padding: 0; }}
                 .features li {{ margin: 5px 0; }}
                 button {{ background-color: #ff9900; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; }}
-                button:hover {{ background-color: #e68a00; }}
+                button:hover {{ background-color: #e68a00; transform: scale(1.05);}}
                 .wishlist-btn {{ background-color: #007bff; }}
-                .wishlist-btn:hover {{ background-color: #0056b3; }}
+                .wishlist-btn:hover {{ background-color: #0056b3; transform: scale(1.05);}}
                 footer {{ background-color: #333; color: white; text-align: center; padding: 10px; margin-top: auto; }}
             </style>
             <script>
@@ -643,9 +643,21 @@ class ProductPage:
                 <ul class="features">
                     {"".join(f"<li>{feature}</li>" for feature in features)}
                 </ul>
-                <button onclick="addToCart('{product['name']}', '{product['price']}', '{description}', '{product['image']}')">Add to Cart</button>
-                <button onclick="buyNow('{product['name']}')">Buy Now</button>
-                <button class="wishlist-btn" onclick="addToWishlist('{product['name']}', '{product['price']}', '{product['image']}')">Add to Wishlist</button>
+                <button onclick="addToCart('{product['name']}', '{product['price']}', '{description}', '{product['image']}')">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(236, 229, 229, 1);transform: ;msFilter:;"><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle><path d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-4 6h-2v2h-2v-2h-2v-2h2V9h2v2h2v2z"></path></svg>
+                </button>
+                <button onclick="buyNow('{product['name']}')">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                    <path d="M16 23V4L4 7.5L3 20.5L16 23Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M17.5 5.14833L16 4V23L21 21.5C21 18.8371 20.7998 16.178 20.4012 13.5451L19.1298 5.14833H17.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M13.0016 4.87502C13.0092 2.85785 12.239 1.26304 11.0023 1.02911C9.44084 0.73373 7.72699 2.71982 7.17435 5.46517C7.09535 5.85761 7.04435 6.24433 7.01953 6.61979" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M14.8665 4.33083C14.5732 3.14854 13.9527 2.31296 13.1092 2.14837C11.7258 1.8784 10.2195 3.50662 9.55469 5.8801" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12.7896 9.42437C11.7896 9.0035 9.19076 8.24627 8.50372 10.266C8.1332 11.3553 8.79795 12.5183 10.2171 13.6331C12.2041 15.1939 11.867 16.524 11.5033 17.0001C10.2176 18.6837 7.64621 17.7016 6.78906 17.0001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <button class="wishlist-btn" onclick="addToWishlist('{product['name']}', '{product['price']}', '{product['image']}')">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill:white;margin-right:5px;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+                </button>
             </div>
             <footer>
                 <p>&copy; 2024 SportsFit. All rights reserved.</p>

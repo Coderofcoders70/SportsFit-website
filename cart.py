@@ -16,9 +16,108 @@ class CartPage:
             {"name": "Skipping Rope", "category": "fitness-accessories", "price": 200, "imageURL": "https://m.media-amazon.com/images/I/81O6gfeClDL._SX569_.jpg"},
             {"name": "Foam Roller", "category": "fitness-accessories", "price": 800, "imageURL": "https://m.media-amazon.com/images/I/41gZtYEhabL._AC_UL320_.jpg"},
             {"name": "Ankle Weights", "category": "fitness-accessories", "price": 450, "imageURL": "https://m.media-amazon.com/images/I/41b81SJr4dL._AC_UL320_.jpg"},
+            {"name": "Mountain Bike", "category": "outdoor", "price": 1299, "rating": 4.5, "imageURL": "https://bicyclewarehouse.com/cdn/shop/products/giant-fathom-1-27-5-mountain-bike-2022-28685815382118.jpg"},
+            {"name": "Treadmill", "category": "fitness-equipment", "price": 20000, "rating": 4.8, "imageURL": "https://www.powermaxfitness.net/uploads/thumb/800_600_1657091228_product_06072022123708.jpg"},
+            {"name": "Protein Bar", "category": "nutrition", "price": 800, "rating": 3.3, "imageURL": "https://www.bigbasket.com/media/uploads/p/xl/40122051_8-ritebite-max-protein-daily-choco-almond-bar.jpg"},
+            {"name": "Gym Bag", "category": "sports-accessories", "price": 370, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/815CS0qdoyL._SX569_.jpg"},
+            {"name": "Leather Gym Gloves", "category": "sports-accessories", "price": 399, "rating": 4.0, "imageURL": "https://m.media-amazon.com/images/I/71WllQEscmL._SX569_.jpg"},
+            {"name": "Sports Running Set", "category": "sports-wear", "price": 494, "rating": 4.1, "imageURL": "https://m.media-amazon.com/images/I/41g3uCT1OpL.jpg"},
+            {"name": "Gym Knee Cap", "category": "fitness-accessories", "price": 189, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/71r5YHLuOdL._SX679_PIbundle-2,TopRight,0,0_AA679SH20_.jpg"},
+            {"name": "Boldfit Plastic Gym Typhoon Shaker", "category": "fitness-accessories", "price": 179, "rating": 4.4, "imageURL": "https://m.media-amazon.com/images/I/51NKPZx0a6L._SX569_.jpg"},
+            {"name": "Sports Sunglasses", "category": "sports-accessories", "price": 1049, "rating": 4.5, "imageURL": "https://m.media-amazon.com/images/I/61GG2gHjlDL._SX679_.jpg"},
+            {"name": "Weight Plate", "category": "fitness-accessories", "price": 579, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/61NU+Lr-ZzL._SX569_.jpg"},
+            {"name": "Dumbbell set", "category": "gym-equipment", "price": 1499, "rating": 3.2, "imageURL": "https://m.media-amazon.com/images/I/612wD806BnL._AC_UL320_.jpg"},
+            {"name": "Kettlebell", "category": "fitness-accessories", "price": 800, "rating": 2.1, "imageURL": "https://m.media-amazon.com/images/I/615mcUuFzEL._SX569_.jpg"},
+            {"name": "Bench Press", "category": "fitness-equipment", "price": 4500, "rating": 4.6, "imageURL": "https://m.media-amazon.com/images/I/416jU1p4hyL._SX300_SY300_QL70_FMwebp_.jpg"},
+            {"name": "Rowing Machine", "category": "fitness-equipment", "price": 18000, "rating": 3.8, "imageURL": "https://m.media-amazon.com/images/I/61waH3MGrSL._AC_UY218_.jpg"},
+            {"name": "Gym And Fitness Kit", "category": "fitness-accessories", "price": 1299, "rating": 4.4, "imageURL": "https://m.media-amazon.com/images/I/81XNzjmXi+L._SX569_.jpg"},
+            {"name": "Hand Gripper", "category": "fitness-accessories", "price": 169, "rating": 4.0, "imageURL": "https://m.media-amazon.com/images/I/61WCHJEB05L._SX569_.jpg"},
+            {"name": "Gymnastic Rings", "category": "fitness-accessories", "price": 1599, "rating": 4.5, "imageURL": "https://m.media-amazon.com/images/I/41p9Y5lD1JL._SX300_SY300_QL70_FMwebp_.jpg"},
+            {"name": "Gym Bag", "category": "sports-accessories", "price": 370, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/815CS0qdoyL._SX569_.jpg"},
+            {"name": "Dumbbell", "category": "gym-equipment", "price": 1568, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/31hnntmHgmL.jpg"},
+            {"name": "Vinyl Kettlebell", "category": "fitness-accessories", "price": 1599, "rating": 4.4, "imageURL": "https://m.media-amazon.com/images/I/6116etN+S-L._SX569_.jpg"},
+            {"name": "Vinyl 4 Pound Dumbbells", "category": "fitness-accessories", "price": 829, "rating": 4.0, "imageURL": "https://m.media-amazon.com/images/I/51aMp8BYasL._SX569_.jpg"},
+            {"name": "Weight Lifting Rod", "category": "fitness-accessories", "price": 599, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/41-GQXTb13L._SX569_.jpg"},
+            {"name": "Pull Up Bar", "category": "fitness-equipment", "price": 1049, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/616S2Q0RqjL._SX569_.jpg"},
+            {"name": "Weight Plate", "category": "fitness-accessories", "price": 579, "rating": 4.4, "imageURL": "https://m.media-amazon.com/images/I/61NU+Lr-ZzL._SX569_.jpg"},
+            {"name": "Sport Sunglasses", "category": "sports-accessories", "price": 799, "rating": 4.1, "imageURL": "https://m.media-amazon.com/images/I/51du4P5G3AL._SX679_.jpg"},
+            {"name": "Sports Watch", "category": "sports-accessories", "price": 279, "rating": 4.0, "imageURL": "https://m.media-amazon.com/images/I/51BrFkZcMxL._SX679_.jpg"},
+            {"name": "Sports Archery Bow and Arrow", "category": "sports", "price": 399, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/61kWpOTZYIL._SX466_.jpg"},
+            {"name": "Kids Bowling Play Set", "category": "sports-toys", "price": 356, "rating": 4.1, "imageURL": "https://m.media-amazon.com/images/I/81jxG+mj+ZL._SY450_.jpg"},
+            {"name": "Dart Boards", "category": "indoor-games", "price": 499, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/513y-y80AOL._SX300_SY300_QL70_FMwebp_.jpg"},
+            {"name": "Cricket Set", "category": "sports", "price": 1299, "rating": 4.5, "imageURL": "https://m.media-amazon.com/images/I/61U5D3Cm0OL._AC_UF894,1000_QL80_.jpg"},
+            {"name": "Frisbee", "category": "outdoor", "price": 69, "rating": 4.1, "imageURL": "https://m.media-amazon.com/images/I/61Q+dn494aL._SX569_.jpg"},
+            {"name": "Ludo + Snakes & Ladders", "category": "board-games", "price": 615, "rating": 4.0, "imageURL": "https://m.media-amazon.com/images/I/71jfnSDekDL._SX450_.jpg"},
+            {"name": "Sudoku Brain Game", "category": "board-games", "price": 349, "rating": 4.1, "imageURL": "https://m.media-amazon.com/images/I/71m-JjVJNdL._SY425_.jpg"},
+            {"name": "Soccer Game Board", "category": "indoor-games", "price": 1298, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/411v-HeMR-L._SX300_SY300_QL70_FMwebp_.jpg"},
+            {"name": "String Hockey Table Board", "category": "indoor-games", "price": 490, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/71KDPQhQ1qL._SX569_.jpg"},
+            {"name": "Basketball Hoop", "category": "sports", "price": 999, "rating": 4.4, "imageURL": "https://m.media-amazon.com/images/I/81ndumBu4FS._SX569_.jpg"},
+            {"name": "Wooden Jigsaw Puzzle", "category": "toys", "price": 290, "rating": 4.0, "imageURL": "https://m.media-amazon.com/images/I/71rJwGG3jDL._SX450_.jpg"},
+            {"name": "Stress Buster Cube", "category": "toys", "price": 349, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/71OXrIaR0nL._SY450_.jpg"},
+            {"name": "Wooden Labyrinth Board", "category": "toys", "price": 304, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/71T7jVDDciL._SX450_.jpg"},
+            {"name": "Tshirt for Men", "category": "clothing", "price": 598, "rating": 4.1, "imageURL": "https://m.media-amazon.com/images/I/61ThK8RnMjL._SX679_.jpg"},
+            {"name": "Cotton Socks", "category": "clothing", "price": 379, "rating": 4.0, "imageURL": "https://m.media-amazon.com/images/I/71aWx1mvCpL._SX679_.jpg"},
+            {"name": "Sports Shorts", "category": "clothing", "price": 718, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/51+mkAk9KeL._SX679_.jpg"},
+            {"name": "Sports Running Set", "category": "clothing", "price": 494, "rating": 4.4, "imageURL": "https://m.media-amazon.com/images/I/41g3uCT1OpL.jpg"},
+            {"name": "Line Coat", "category": "clothing", "price": 1249, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/51OYFbJbwDL._SX679_.jpg"},
+            {"name": "Sipper Bottle", "category": "fitness-accessories", "price": 649, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/81TwSqGPHDL._SX679_.jpg"},
+            {"name": "Joggers Men", "category": "clothing", "price": 389, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/61b+OM+VtXL._SX679_.jpg"},
+            {"name": "Pajama Pants", "category": "clothing", "price": 499, "rating": 4.1, "imageURL": "https://m.media-amazon.com/images/I/51lH2Qey-NL._SY741_.jpg"},
+            {"name": "Track Pants", "category": "clothing", "price": 399, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/31BCg+gakIL.jpg"},
+            {"name": "Bomber Jacket", "category": "clothing", "price": 449, "rating": 4.4, "imageURL": "https://m.media-amazon.com/images/I/51XWUBbfe7L._SX679_.jpg"},
+            {"name": "Digital Sports Watch", "category": "accessories", "price": 790, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/718eNAc+AAL._SY679_.jpg"},
+            {"name": "Sports Shoes", "category": "sports-wear", "price": 1119, "rating": 4.5, "imageURL": "https://m.media-amazon.com/images/I/611+P1LFyWS._SY695_.jpg"},
+            {"name": "Cricket Cap", "category": "sports-accessories", "price": 297, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/71guHaHnSsL._SX679_.jpg"},
+            {"name": "Sports Sunglasses", "category": "sports-accessories", "price": 1299, "rating": 4.6, "imageURL": "https://m.media-amazon.com/images/I/51ViSAvmVpL._SX679_.jpg"},
+            {"name": "Cricket Helmet Skull Cap", "category": "sports-accessories", "price": 198, "rating": 4.1, "imageURL": "https://m.media-amazon.com/images/I/41xKb2Gh6OL._SX679_.jpg"},
+            {"name": "Brainvita Board Game", "category": "board-games", "price": 130, "rating": 4.0, "imageURL": "https://m.media-amazon.com/images/I/912UmK8nfWL._SY450_.jpg"},
+            {"name": "Carrom Board", "category": "board-games", "price": 1199, "rating": 4.5, "imageURL": "https://m.media-amazon.com/images/I/616qmRUNOsL._SY679_.jpg"},
+            {"name": "Wireless Controller", "category": "electronics", "price": 1746, "rating": 4.7, "imageURL": "https://m.media-amazon.com/images/I/31aJy+xNpZL._SY300_SX300_.jpg"},
+            {"name": "Rechargeable Hover Football Indoor Game", "category": "indoor-games", "price": 499, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/41E5hab325L._SX300_SY300_QL70_FMwebp_.jpg"},
+            {"name": "Tic Tac Toe Toy Game", "category": "board-games", "price": 239, "rating": 4.1, "imageURL": "https://m.media-amazon.com/images/I/519XIs57j1L._SX450_.jpg"},
+            {"name": "Abs Roller", "category": "fitness-accessories", "price": 179, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/71Vt2Pgy4hL._SX569_.jpg"},
+            {"name": "Solitaire Board in Wood", "category": "board-games", "price": 499, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/61yLb5L-P4L._SY450_.jpg"},
+            {"name": "Monopoly", "category": "board-games", "price": 1499, "rating": 4.7, "imageURL": "https://m.media-amazon.com/images/I/818p67YdM3L._SY450_.jpg"},
+            {"name": "Strategy Board Game", "category": "board-games", "price": 795, "rating": 4.4, "imageURL": "https://m.media-amazon.com/images/I/51Z63aOVsgL._SX300_SY300_QL70_FMwebp_.jpg"},
+            {"name": "Badminton Racquet", "category": "sports", "price": 749, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/81eSsR1GKyL._SX569_.jpg"},
+            {"name": "Sipper Bottle Premium", "category": "fitness-accessories", "price": 899, "rating": 4.4, "imageURL": "https://m.media-amazon.com/images/I/71T5vGBK2OL._SX569_.jpg"},
+            {"name": "Wrist Support", "category": "fitness-accessories", "price": 179, "rating": 4.1, "imageURL": "https://m.media-amazon.com/images/I/51Ml+0Kx5YL._SX569_.jpg"},
+            {"name": "Soccer Ball", "category": "sports", "price": 329, "rating": 4.0, "imageURL": "https://m.media-amazon.com/images/I/61RpRYFb2wL._SX569_.jpg"},
+            {"name": "Table Tennis", "category": "indoor-games", "price": 640, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/711H-8d-sjL._SX569_.jpg"},
+            {"name": "Jumping Rope", "category": "fitness-accessories", "price": 99, "rating": 4.0, "imageURL": "https://m.media-amazon.com/images/I/71l2-gWOnpL._SX569_.jpg"},
+            {"name": "Men's T-Shirt", "category": "men", "price": 499, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/61ThK8RnMjL._SX679_.jpg"},
+            {"name": "Men's Shoes", "category": "men", "price": 1599, "rating": 4.5, "imageURL": "https://m.media-amazon.com/images/I/71zZyS6m+mL._UX569_.jpg"},
+            {"name": "Men's Joggers", "category": "men", "price": 799, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/61FJtVQh+bL._SX569_.jpg"},
+            {"name": "Men's Formal Shirt", "category": "men", "price": 999, "rating": 4.6, "imageURL": "https://m.media-amazon.com/images/I/61k+oZCaxAL._SX569_.jpg"},
+            {"name": "Men's Jeans", "category": "men", "price": 1299, "rating": 4.4, "imageURL": "https://m.media-amazon.com/images/I/61FTx4LL9+L._UX569_.jpg"},
+            {"name": "Men's Jacket", "category": "men", "price": 2199, "rating": 4.7, "imageURL": "https://m.media-amazon.com/images/I/61YN5mY3shL._UX569_.jpg"},
+            {"name": "Men's Cap", "category": "men", "price": 399, "rating": 4.1, "imageURL": "https://m.media-amazon.com/images/I/61Ihhw1K1yL._SX569_.jpg"},
+            {"name": "Men's Backpack", "category": "men", "price": 1799, "rating": 4.6, "imageURL": "https://m.media-amazon.com/images/I/71dU0q5I6tL._SX569_.jpg"},
+            {"name": "Men's Wrist Watch", "category": "men", "price": 2999, "rating": 4.8, "imageURL": "https://m.media-amazon.com/images/I/81qzFFmLgUL._SX569_.jpg"},
+            {"name": "Men's Wallet", "category": "men", "price": 699, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/81X7l6U5ogL._SX569_.jpg"},
+            {"name": "Women's Dress", "category": "women", "price": 1299, "rating": 4.5, "imageURL": "https://m.media-amazon.com/images/I/61Wq3Uhu7UL._SX569_.jpg"},
+            {"name": "Women's Heels", "category": "women", "price": 999, "rating": 4.4, "imageURL": "https://m.media-amazon.com/images/I/61okNcBtsuL._UX569_.jpg"},
+            {"name": "Women's Saree", "category": "women", "price": 1599, "rating": 4.6, "imageURL": "https://m.media-amazon.com/images/I/71mkzFxo4uL._UY550_.jpg"},
+            {"name": "Women's Jeans", "category": "women", "price": 1099, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/71taE8gUvbL._UY550_.jpg"},
+            {"name": "Women's Handbag", "category": "women", "price": 1999, "rating": 4.8, "imageURL": "https://m.media-amazon.com/images/I/71Nz2fpNwQL._SX569_.jpg"},
+            {"name": "Women's Watch", "category": "women", "price": 2999, "rating": 4.7, "imageURL": "https://m.media-amazon.com/images/I/81oiHioLALL._SX569_.jpg"},
+            {"name": "Women's Sandals", "category": "women", "price": 899, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/61fxuZzHDUL._UX569_.jpg"},
+            {"name": "Women's Kurta", "category": "women", "price": 1299, "rating": 4.5, "imageURL": "https://m.media-amazon.com/images/I/71cLLFJCRIL._UY550_.jpg"},
+            {"name": "Women's Jewelry Set", "category": "women", "price": 1599, "rating": 4.7, "imageURL": "https://m.media-amazon.com/images/I/81v+2khdGSL._UY550_.jpg"},
+            {"name": "Women's Hair Accessories", "category": "women", "price": 299, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/71pYmRUQ5jL._UY550_.jpg"},
+            {"name": "Kid's T-Shirt", "category": "kids", "price": 499, "rating": 4.4, "imageURL": "https://m.media-amazon.com/images/I/61+VwojZDSL._SX679_.jpg"},
+            {"name": "Kid's Shoes", "category": "kids", "price": 799, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/71A2JgTV7-L._UX679_.jpg"},
+            {"name": "Kid's Backpack", "category": "kids", "price": 899, "rating": 4.5, "imageURL": "https://m.media-amazon.com/images/I/71E5SObWUBL._SX679_.jpg"},
+            {"name": "Kid's Jacket", "category": "kids", "price": 1099, "rating": 4.6, "imageURL": "https://m.media-amazon.com/images/I/71b2EOxMTyL._UX679_.jpg"},
+            {"name": "Kid's Watch", "category": "kids", "price": 599, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/51Ns1HG1myL._SX679_.jpg"},
+            {"name": "Kid's Cap", "category": "kids", "price": 299, "rating": 4.2, "imageURL": "https://m.media-amazon.com/images/I/51UI9LVGM-L._SX679_.jpg"},
+            {"name": "Kid's Dress", "category": "kids", "price": 1299, "rating": 4.6, "imageURL": "https://m.media-amazon.com/images/I/91v-QMgJ8dL._UY550_.jpg"},
+            {"name": "Kid's Toys", "category": "kids", "price": 499, "rating": 4.4, "imageURL": "https://m.media-amazon.com/images/I/61h6rSoQ4ML._SX679_.jpg"},
+            {"name": "Kid's Hair Accessories", "category": "kids", "price": 199, "rating": 4.1, "imageURL": "https://m.media-amazon.com/images/I/71oRGgxJ5QL._UY550_.jpg"},
+            {"name": "Kid's Gloves", "category": "kids", "price": 399, "rating": 4.3, "imageURL": "https://m.media-amazon.com/images/I/61XsBtFM69L._SX679_.jpg"}
         ]
         self.coupon_code = "DISCOUNT20"
-    
+
     def get_recommendations(self):
         cart_categories = {details["category"] for details in self.cart.values()}
         recommendations = [
@@ -106,7 +205,6 @@ class CartPage:
                 padding: 0;
                 background-color: #f3f3f3;
             }}
-
             header {{
                 background-color: #232f3e;
                 padding: 10px 20px;
@@ -201,7 +299,7 @@ class CartPage:
             }}
             .remove-btn svg {{
                 width: 20px;
-                height: 20px;
+                height: 25px;
                 cursor: pointer;
             }}
             .right-container {{
@@ -246,9 +344,9 @@ class CartPage:
                color: orange;
             }}
             .Delivery_container {{ 
-            background-color: #ff9900; 
-            width: 61%; 
-            border-radius: 15px; 
+               background-color: #ff9900; 
+               width: 61%; 
+               border-radius: 15px; 
             }}
             .Delivery {{ 
                 background-color: #ff9900; 
@@ -279,6 +377,7 @@ class CartPage:
 
             .proceed-btn:hover {{
                 background-color: #e68a00;
+                transform: scale(1.05);
             }}
             .coupon_code{{
                 padding: 5px;
@@ -287,6 +386,11 @@ class CartPage:
                 padding: 8px;
                 width: 95px;
                 font-size: 15px;
+            }}
+            .rating_logo {{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
             }}
             footer {{
                 background-color: #232f3e;
@@ -434,6 +538,9 @@ class CartPage:
                     }});
                 }});
             </script>
+            <div class="rating_logo">
+              <img src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/What-are-the-experts-buying.gif'>           
+            </div>
             <footer>
                 <div class="footer-grid">
             <!-- Section: Get to Know Us -->
@@ -527,10 +634,4 @@ class CartPage:
             else:
                 del self.cart[item]
         raise cherrypy.HTTPRedirect("/cart")
-
-    @cherrypy.expose
-    @cherrypy.tools.allow(methods=['POST'])
-    def proceed(self):
-        return """
-        <h1>Thank you for your purchase!</h1>
-        """
+    

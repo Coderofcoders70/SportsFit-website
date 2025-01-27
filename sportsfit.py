@@ -23,18 +23,19 @@ class SportsFitECommerce:
             <title>SportsFit - Home</title>
             <style>
                 * { margin: 0; padding: 0; box-sizing: border-box; }
-                body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #ffddbc; }
+                body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: white; }
                 /* Header */
                 header {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    background-color: #222;
+                    background-color: rgba(34, 34, 34, 0.8);
                     color: #f1f1f1;
                     padding: 10px 20px;
                     position: sticky;
                     top: 0;
                     z-index: 1000;
+                    transition: background-color 0.3s ease;
                     font-family: Arial, sans-serif;
                 }
 
@@ -111,10 +112,20 @@ class SportsFitECommerce:
                     color: #ff9800;
                 }
 
+                .user_logo a{
+                    font-size: 2rem;
+                    margin: 20px;
+                    user-select: none;
+                }
+                .user_logo a:hover{
+                    color: #ff9800;
+                    user-select: none;
+                }
                 /* Dropdown Menu */
                 .dropdown-menu a {
                     margin-left: 10px;
                 }
+                /* Search bar  */
                 .search-bar {
                     display: flex;
                     justify-content: center;
@@ -192,6 +203,11 @@ class SportsFitECommerce:
                     height: 24px;
                     cursor: pointer;
                 }
+                .icon svg:hover {
+                    border: 2px solid white;
+                    padding: 2px;
+                    border-radius: 20px;
+                }
                 .prodetails {
                    display: inline-block;
                    text-align: center;
@@ -209,6 +225,52 @@ class SportsFitECommerce:
                     background-color: #585EBA;
                     transform: scale(1.05);
                     color: white; 
+                }
+                /*Background image slider */
+                /* Slider Container */
+                .background-slider-container {
+                    position: relative;
+                    width: 100%;
+                    height: 600px; /* Adjust height based on preference */
+                    overflow: hidden;
+                }
+
+                /* Slider and Slides */
+                .background-slider {
+                    display: flex;
+                    transition: transform 1s ease-in-out;
+                    height: 100%;
+                }
+
+                .background-slide {
+                    min-width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                /* Dots Navigation */
+                .slider-dots {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: flex;
+                    gap: 15px;
+                    z-index: 10;
+                }
+
+                .dot {
+                    width: 15px;
+                    height: 15px;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    border-radius: 50%;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+
+                .dot.active {
+                    background-color: #007bff;
                 }
                 .title{text-align: center; margin: 70px;}
                 .slider { display: grid; width: 80vw; margin: 20px auto; overflow: hidden; position: relative;}
@@ -229,6 +291,167 @@ class SportsFitECommerce:
                     align-items: center;
                 }
                 
+                /* workout at home */
+                .product-section {
+                    text-align: center;
+                    padding: 20px;
+                    background-color: #fff;
+                }
+
+                .product-section h1 {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                    color: #000;
+                }
+
+                .product-section h2 {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    color: #333;
+                }
+
+                .product-container {
+                    display: flex;
+                    justify-content: center;
+                    gap: 60px;
+                    flex-wrap: wrap;
+                }
+
+                .product-card {
+                    background-color: #e6f8f9;
+                    width: 200px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    text-align: center;
+                    padding: 15px;
+                    transition: transform 0.3s;
+                }
+
+                .product-card:hover {
+                    transform: translateY(-10px);
+                }
+
+                .product-image {
+                    height: 320px;
+                    margin-bottom: 15px;
+                }
+
+                .product-title {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    color: #333;
+                }
+
+                .shop-now {
+                    display: inline-block;
+                    background-color: #00aaff;
+                    color: #fff;
+                    padding: 8px 15px;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    margin-top: 10px;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+
+                .shop-now:hover {
+                    background-color: #0088cc;
+                }
+                /* build muscles */
+                .section {
+                    text-align: center;
+                    padding: 70px;
+                    background-color: #fff;
+                }
+
+                .section h1, .section h2 {
+                    margin: 10px 0;
+                }
+
+                .product-cont{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 90px;
+                    margin-top: 20px;
+                }
+
+                .product-cards {
+                    width: 120px;
+                    text-align: center;
+                }
+
+                .circle-image {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    border: 5px solid #6be3e0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .circle-image img {
+                    width: 290px;
+                    height: 290px;
+                    object-fit: cover;
+                }
+
+                .product-title {
+                    margin-top: 10px;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                .divider{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 90vw;
+                }
+                /* Yoga section products */
+                .yoga-section {
+                    text-align: center;
+                    padding: 20px;
+                    background-color: #fff;
+                }
+
+                .yoga-section h1 {
+                    margin: 10px 0;
+                    font-size: 20px;
+                    color: #333;
+                }
+
+                .yoga-product-container {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 70px;
+                    margin-top: 20px;
+                }
+
+                .yoga-product-card {
+                    width: 305px;
+                    text-align: center;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    background-color: #fff;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+
+                .yoga-product-card:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+                }
+
+                .yoga-product-image {
+                    width: 100%;
+                    height: 341px;
+                    object-fit: cover;
+                }
                 /* Cards Section Styling */
                 .cards-section {
                     padding: 20px;
@@ -291,70 +514,11 @@ class SportsFitECommerce:
                     background-color: #0056b3;
                     transform: scale(1.05);
                 }
-                .image-slider-container {
-                   display: flex;
-                   justify-content: center;
-                   align-items: center;
-                   margin: 1px 0 80px; 
-                }
-                .image-slider {
-                    position: relative;
-                    width: 80vw;
-                    max-width: 1330px;
-                    height: 430px;
-                    overflow: hidden;
-                    border-radius: 15px;
-                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-                    perspective: 1000px; /* Adds 3D perspective */
-                    background-color: #f9f9f9;
-                }
-                .image-slides {
-                    display: flex;
-                    transition: transform 0.6s ease-in-out;
-                    transform-style: preserve-3d; /* 3D transform */
-                }
-                
-                .image-slide {
-                    min-width: 100%;
-                    height: 100%;
-                    backface-visibility: hidden; /* Prevents flickering during transition */
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .image-slide img {
-                    width: 100%;
-                    height: 450px;
-                    object-fit: cover;
-                    border-radius: 15px;
-                }
-                .slider-btn {
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    width: 50px;
-                    height: 50px;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    color: white;
-                    border: none;
-                    border-radius: 50%;
-                    cursor: pointer;
-                    z-index: 10;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 20px;
-                    transition: background-color 0.3s;
-                }
-                .slider-btn:hover {
-                    background-color: rgba(0, 0, 0, 0.7);
-                }
-                .prev-btn {
-                    left: 10px;
-                }
-                .next-btn {
-                    right: 10px;
+                .study_logos{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    width: 93vw;
+                    margin: 65px auto;
                 }
                 .fitness-destination {
                     padding: 40px 10%;
@@ -395,7 +559,17 @@ class SportsFitECommerce:
                     margin: 0;
                     font-size: 16px;
                 }
+
+                .customreview-section{
+                    padding: 30px;
+                    margin: 20px auto;
+                    width: 85vw;
+                }
                 
+                .customer_rev{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
                 .cta {
                     margin-top: 30px;
                     font-size: 18px;
@@ -407,7 +581,7 @@ class SportsFitECommerce:
                   text-align: center;
                 }
                 .back-to-top button {
-                  background-color: #007bff;
+                  background-color: #333;
                   color: white;
                   border: none;
                   padding: 12px 20px;
@@ -418,7 +592,7 @@ class SportsFitECommerce:
                   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
                 } 
                 .back-to-top button:hover {
-                   background-color: #0056b3;
+                   background-color: #555;
                    transform: scale(1.05);
                 }
                 footer {
@@ -437,7 +611,7 @@ class SportsFitECommerce:
 
                 .footer-grid h3 {
                     font-size: 25px;
-                    margin-bottom: 10px;
+                    margin-bottom: 5px;
                     border-bottom: 1px solid #3a45533;
                     padding-bottom: 5px;
                 }
@@ -496,6 +670,7 @@ class SportsFitECommerce:
                 <button class="close-btn" onclick="toggleMenu()">✖</button>
                 <div class="menu-section">
                 <svg class = "userface" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(236, 232, 232, 1);transform: ;msFilter:;"><path d="M12 2A10.13 10.13 0 0 0 2 12a10 10 0 0 0 4 7.92V20h.1a9.7 9.7 0 0 0 11.8 0h.1v-.08A10 10 0 0 0 22 12 10.13 10.13 0 0 0 12 2zM8.07 18.93A3 3 0 0 1 11 16.57h2a3 3 0 0 1 2.93 2.36 7.75 7.75 0 0 1-7.86 0zm9.54-1.29A5 5 0 0 0 13 14.57h-2a5 5 0 0 0-4.61 3.07A8 8 0 0 1 4 12a8.1 8.1 0 0 1 8-8 8.1 8.1 0 0 1 8 8 8 8 0 0 1-2.39 5.64z"></path><path d="M12 6a3.91 3.91 0 0 0-4 4 3.91 3.91 0 0 0 4 4 3.91 3.91 0 0 0 4-4 3.91 3.91 0 0 0-4-4zm0 6a1.91 1.91 0 0 1-2-2 1.91 1.91 0 0 1 2-2 1.91 1.91 0 0 1 2 2 1.91 1.91 0 0 1-2 2z"></path></svg>
+                <div class="user_logo"><a href = "/login">Hello User!!</a></div>    
                     <h3>Home</h3>
                     <a href="/">Home</a>
                 </div>
@@ -519,7 +694,7 @@ class SportsFitECommerce:
                 </div>
                 </div>
                 </nav>
-                <h1 class = "logo">SportsFit</h1>
+                <h1 class = "logo"><a href= "/" style="text-decoration: none; color: white;">SportsFit</a></h1>
             <div class="search-bar">
                 <form method="get" action="/search" style="display: flex; align-items: center; width: 100%;">
                     <input type="text" name="query" id="searchInput" placeholder="Search for products..." required>
@@ -543,31 +718,25 @@ class SportsFitECommerce:
                     <path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"></path>
                 </svg></a>
             </div>
-            </header>
-           <div class = "title">
+            </header> 
+            <div class="background-slider-container">
+                <div class="background-slider">  
+                    <div class="background-slide" style="background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/Sports/EnFRevmap/COMBO-OFFERS.jpg');"></div>
+                    <div class="background-slide" style="background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/Sports/EnFRevmap/Curatedstores/Cycling-store.jpg');"></div>
+                    <div class="background-slide" style="background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/Sports/EnFRevmap/Curatedstores/fintness.jpg');"></div>
+                    <div class="background-slide" style="background-image: url('https://images-eu.ssl-images-amazon.com/images/G/31/Sports/EnFRevmap/Curatedstores/Home-gym.jpg');"></div>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                </div>
+            </div>
+            <div class = "title">
                 <h1>Welcome to SportsFit</h1>
                 <p>Your one-stop shop for sports and fitness needs!</p>
-            </div>    
-        <div class="image-slider-container">
-          <div class="image-slider">
-           <div class="image-slides">
-            <div class="image-slide">
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Sports/EnFRevmap/COMBO-OFFERS.jpg" alt="Slide 1">
-            </div>
-            <div class="image-slide">
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Sports/EnFRevmap/Curatedstores/Cycling-store.jpg" alt="Slide 2">
-            </div>
-            <div class="image-slide">
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Sports/EnFRevmap/Curatedstores/fintness.jpg" alt="Slide 3">
-            </div>
-            <div class="image-slide">
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Sports/EnFRevmap/Curatedstores/Home-gym.jpg" alt="Slide 3">
-            </div>
-        </div>
-            <button class="slider-btn prev-btn">&lt;</button>
-            <button class="slider-btn next-btn">&gt;</button>
-        </div>
-    </div>
+            </div> 
             <div class="slider">
                 <div class="slides">
                     <div class="slide">
@@ -835,6 +1004,163 @@ class SportsFitECommerce:
                   </div>
                 </div>
             </div>
+            <!-- workout home -->
+            <div class="product-section">
+                <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Stripe_WAH.jpg" alt="header1">
+                <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Getlean/PC/Header.jpg" alt="header2">
+
+                <div class="product-container">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Getlean/PC/1_Cardio_Kiosk.jpg" alt="Cross Trainers" class="product-image">
+                        <div class="product-title">CROSS TRAINERS</div>
+                        <a href="/products?category=gym-equipment" class="shop-now">Shop now</a>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Getlean/PC/2_Cardio_Kiosk.jpg" alt="Treadmills" class="product-image">
+                        <div class="product-title">TREADMILLS</div>
+                        <a href="/products?category=gym-equipment" class="shop-now">Shop now</a>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/G/31/img22/Sports/September/BeatXP/Untitled-2.jpg" alt="Exercise Bikes" class="product-image">
+                        <div class="product-title">EXERCISE BIKES</div>
+                        <a href="/products?category=gym-equipment" class="shop-now">Shop now</a>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="product-card">
+                     <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Getlean/PC/4_Cardio_Kiosk.jpg" alt="Explore more" class="product-image">
+                        <div class="product-title">EXPLORE MORE</div>
+                        <a href="/products" class="shop-now">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Build Muscles Section -->
+            <div class="section">
+                <img src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Build/PC/Build-Muscles-1500x100.jpg'>
+                <div class="product-cont">
+                    <!-- Product 1 -->
+                    <div class="product-cards">
+                        <div class="circle-image">
+                            <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Build/PC/dumbells.jpg" alt="Dumbbells">
+                        </div>
+                        <div class="product-title">Dumbbells</div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-cards">
+                        <div class="circle-image">
+                            <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Build/PC/Gym-Sets.jpg" alt="Gym Sets">
+                        </div>
+                        <div class="product-title">Gym Sets</div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-cards">
+                        <div class="circle-image">
+                            <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Build/PC/Hand-Grips.jpg" alt="Hand Grips">
+                        </div>
+                        <div class="product-title">Hand Grips</div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-cards">
+                        <div class="circle-image">
+                            <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Build/PC/Explore-more.jpg" alt="Explore More">
+                        </div>
+                        <div class="product-title">Explore More</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- Home Workout Section -->
+            <div class="section">
+            <img src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Equipment/PC/Equipment-for-Home-1500x100.jpg'>
+                <div class="product-cont">
+                    <!-- Product 1 -->
+                    <div class="product-cards">
+                        <div class="circle-image">
+                            <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Equipment/PC/Barbells.jpg" alt="Barbells">
+                        </div>
+                        <div class="product-title">Barbells</div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-cards">
+                        <div class="circle-image">
+                            <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Equipment/PC/Tummy-twister.jpg" alt="Tummy Twister">
+                        </div>
+                        <div class="product-title">Tummy Twister</div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-cards">
+                        <div class="circle-image">
+                            <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Equipment/PC/Resistance-bands.jpg" alt="Resistance Bands">
+                        </div>
+                        <div class="product-title">Resistance Bands</div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-cards">
+                        <div class="circle-image">
+                            <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Equipment/PC/Pull-up-bar.jpg" alt="Pull Up Bar">
+                        </div>
+                        <div class="product-title">Pull Up Bar</div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-cards">
+                        <div class="circle-image">
+                            <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Equipment/PC/Skipping-rope.jpg" alt="Skipping Rope">
+                        </div>
+                        <div class="product-title">Skipping Rope</div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-cards">
+                        <div class="circle-image">
+                            <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Equipment/PC/Push-up-bar.jpg" alt="Push Up Bar">
+                        </div>
+                        <div class="product-title">Push Up Bar</div>
+                    </div>
+                </div>
+            </div>
+            <!-- yoga products -->
+            <div class="yoga-section">
+                <img src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Boosturmind/PC/1500x100.jpg'>
+                <div class="yoga-product-container">
+                    <!-- Product 1 -->
+                    <div class="yoga-product-card">
+                        <img class="yoga-product-image" src="https://m.media-amazon.com/images/G/31/img22/Sports/October/BAU/2.jpg" alt="Yoga Mat">
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="yoga-product-card">
+                        <img class="yoga-product-image" src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Boosturmind/PC/mats.jpg" alt="Medicine Balls">
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="yoga-product-card">
+                        <img class="yoga-product-image" src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Boosturmind/PC/Blocks.jpg" alt="Blocks">
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="yoga-product-card">
+                        <img class="yoga-product-image" src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Boosturmind/PC/Bands.jpg" alt="Bands">
+                    </div>
+                </div>
+            </div>
+            <div class="study_logos">
+              <div><img style= "height: 800px; width: 800px;" src = 'https://m.media-amazon.com/images/G/31/img22/Sports/July/EnF/tips-to-control_new.jpg'></div>
+              <div><img style= "height: 800px; width: 800px;" src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Work-from-home-Yoga-poses_new.jpg'></div>
+            </div>
             <div class="fitness-destination">
              <div class="fitness-content">
              <h2 class="fitness-title">One-Stop Fitness Destination: Exercise & Fitness Store for Every Need</h2>
@@ -889,6 +1215,15 @@ class SportsFitECommerce:
         </div>
           <p class="cta">Explore our store today on <strong>SportsFit</strong> and embrace the path to a healthier, more active you!</p>
         </div>
+       </div>
+       <div class = "customreview-section">
+          <h2 style="text-align: center; margin: 40px 0; font-size: 28px; font-weight: bold; color: #333;">Customer Review</h2>
+           <div class = "customer_rev">
+             <div class = "rev-box"><img style = "height: 250px;" src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Review/1_Review-MOB.jpg'></div>
+             <div class = "rev-box"><img style = "height: 250px;" src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Review/2_Review-MOB-2.jpg'></div>
+             <div class = "rev-box"><img style = "height: 250px;" src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Review/3_Review-MOB.jpg'></div>
+             <div class = "rev-box"><img style = "height: 250px;" src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Review/4_Review-MOB.jpg'></div>
+           </div>
        </div>
             <div class="back-to-top">
               <button onclick="scrollToTop()">Back to Top</button>
@@ -951,7 +1286,44 @@ class SportsFitECommerce:
             <p>&copy; 2024 SportsFit. All rights reserved.</p>
             </footer>
             <script>
-               let currentSlide = 0;
+            //Background slider
+            document.addEventListener("DOMContentLoaded", () => {
+                const slides = document.querySelectorAll(".background-slide");
+                const dots = document.querySelectorAll(".dot");
+                const slider = document.querySelector(".background-slider");
+                let currentSlide = 0;
+                const slideCount = slides.length;
+                const slideInterval = 5000; // Time in milliseconds for auto-slide
+
+                // Function to show a specific slide
+                const showSlide = (index) => {
+                    currentSlide = index;
+                    slider.style.transform = `translateX(-${index * 100}%)`;
+                    dots.forEach((dot, idx) => {
+                        dot.classList.toggle("active", idx === index);
+                    });
+                };
+
+                // Function to move to the next slide
+                const nextSlide = () => {
+                    currentSlide = (currentSlide + 1) % slideCount;
+                    showSlide(currentSlide);
+                };
+
+                // Set interval for automatic sliding
+                let interval = setInterval(nextSlide, slideInterval);
+
+                // Add manual navigation using dots
+                dots.forEach((dot, index) => {
+                    dot.addEventListener("click", () => {
+                        clearInterval(interval); // Stop auto-slide on manual interaction
+                        showSlide(index);
+                        interval = setInterval(nextSlide, slideInterval); // Restart auto-slide
+                    });
+                });
+            });
+            // 
+              let currentSlide = 0;
 
               // Function to move to the next slide
                function nextSlide() {
@@ -1383,6 +1755,7 @@ class SportsFitECommerce:
             }}
             a:hover {{
                 background-color: #0056b3;
+                transform: scale(1.05);
             }}
         </style>
     </head>

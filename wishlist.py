@@ -12,7 +12,7 @@ class WishlistPage:
             <head>
                 <title>Wishlist</title>
                 <style>
-                    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #ffddbc; }
+                    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: white; }
                     h1 { color: #333; text-align: center; margin-top: 50px; }
                     .container { text-align: center; padding: 20px; }
                     a { text-decoration: none; color: #007bff; font-size: 18px; }
@@ -171,7 +171,7 @@ class WishlistPage:
         <head>
             <title>Wishlist</title>
             <style>
-                body {{ font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #ffddbc; }}
+                body {{ font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: white; }}
                 h1 {{ color: #333; text-align: center; margin: 20px 0; }}
                 .wishlist-container {{ display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }}
                 .card {{ position: relative; width: 250px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: #fff; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.2s; }}

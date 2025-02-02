@@ -29,9 +29,9 @@ class SportsFitECommerce:
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    background-color: rgba(34, 34, 34, 0.8);
+                    background-color: rgb(4 3 3 / 80%);
                     color: #f1f1f1;
-                    padding: 10px 20px;
+                    padding: 1px 20px;
                     position: sticky;
                     top: 0;
                     z-index: 1000;
@@ -364,7 +364,7 @@ class SportsFitECommerce:
                     padding: 70px;
                     background-color: #fff;
                 }
-
+    
                 .section h1, .section h2 {
                     margin: 10px 0;
                 }
@@ -380,8 +380,13 @@ class SportsFitECommerce:
                 .product-cards {
                     width: 120px;
                     text-align: center;
+                    transition: transform 0.3s;
                 }
 
+                .product-cards:hover{
+                    transform: translateY(-10px);
+                }
+                
                 .circle-image {
                     width: 200px;
                     height: 200px;
@@ -455,7 +460,7 @@ class SportsFitECommerce:
                 /* Cards Section Styling */
                 .cards-section {
                     padding: 20px;
-                    background-color: #ffddbc;
+                    background-color: white;
                     margin: 20px 0;
                 }
                 
@@ -515,10 +520,12 @@ class SportsFitECommerce:
                     transform: scale(1.05);
                 }
                 .study_logos{
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    width: 93vw;
-                    margin: 65px auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    width: 61vw;
+                    margin: 20px auto;
                 }
                 .fitness-destination {
                     padding: 40px 10%;
@@ -664,19 +671,34 @@ class SportsFitECommerce:
         <header>
             <nav>
                 <div class="hamburger-menu" onclick="toggleMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" style="fill: rgba(243, 236, 236, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" color="#ffffff" fill="none">
+                    <path d="M2 10H7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M2 17H7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M2 3H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19.6 18.6L22 21M20.8 14.4C20.8 11.4176 18.3824 9 15.4 9C12.4176 9 10 11.4176 10 14.4C10 17.3824 12.4176 19.8 15.4 19.8C18.3824 19.8 20.8 17.3824 20.8 14.4Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
                 </div>
                 <div class="menu-box" id="menuBox">
                 <button class="close-btn" onclick="toggleMenu()">✖</button>
                 <div class="menu-section">
                 <svg class = "userface" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(236, 232, 232, 1);transform: ;msFilter:;"><path d="M12 2A10.13 10.13 0 0 0 2 12a10 10 0 0 0 4 7.92V20h.1a9.7 9.7 0 0 0 11.8 0h.1v-.08A10 10 0 0 0 22 12 10.13 10.13 0 0 0 12 2zM8.07 18.93A3 3 0 0 1 11 16.57h2a3 3 0 0 1 2.93 2.36 7.75 7.75 0 0 1-7.86 0zm9.54-1.29A5 5 0 0 0 13 14.57h-2a5 5 0 0 0-4.61 3.07A8 8 0 0 1 4 12a8.1 8.1 0 0 1 8-8 8.1 8.1 0 0 1 8 8 8 8 0 0 1-2.39 5.64z"></path><path d="M12 6a3.91 3.91 0 0 0-4 4 3.91 3.91 0 0 0 4 4 3.91 3.91 0 0 0 4-4 3.91 3.91 0 0 0-4-4zm0 6a1.91 1.91 0 0 1-2-2 1.91 1.91 0 0 1 2-2 1.91 1.91 0 0 1 2 2 1.91 1.91 0 0 1-2 2z"></path></svg>
                 <div class="user_logo"><a href = "/login">Hello User!!</a></div>    
-                    <h3>Home</h3>
+                    <h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                        <path d="M3.16405 11.3497L4 11.5587L4.45686 16.1005C4.715 18.6668 4.84407 19.9499 5.701 20.7249C6.55793 21.5 7.84753 21.5 10.4267 21.5H13.5733C16.1525 21.5 17.4421 21.5 18.299 20.7249C19.1559 19.9499 19.285 18.6668 19.5431 16.1005L20 11.5587L20.836 11.3497C21.5201 11.1787 22 10.564 22 9.85882C22 9.35735 21.7553 8.88742 21.3445 8.59985L13.1469 2.86154C12.4583 2.37949 11.5417 2.37949 10.8531 2.86154L2.65549 8.59985C2.24467 8.88742 2 9.35735 2 9.85882C2 10.564 2.47993 11.1787 3.16405 11.3497Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15 16C14.2005 16.6224 13.1502 17 12 17C10.8498 17 9.79952 16.6224 9 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    </svg></h1>
+                    <br>
                     <a href="/">Home</a>
                 </div>
                 <hr class="breakline">
                 <div class="menu-section">
-                    <h3>All Products</h3>
+                    <h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                        <path d="M16 23V4L4 7.5L3 20.5L16 23Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M17.5 5.14833L16 4V23L21 21.5C21 18.8371 20.7998 16.178 20.4012 13.5451L19.1298 5.14833H17.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13.0016 4.87502C13.0092 2.85785 12.239 1.26304 11.0023 1.02911C9.44084 0.73373 7.72699 2.71982 7.17435 5.46517C7.09535 5.85761 7.04435 6.24433 7.01953 6.61979" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M14.8665 4.33083C14.5732 3.14854 13.9527 2.31296 13.1092 2.14837C11.7258 1.8784 10.2195 3.50662 9.55469 5.8801" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12.7896 9.42437C11.7896 9.0035 9.19076 8.24627 8.50372 10.266C8.1332 11.3553 8.79795 12.5183 10.2171 13.6331C12.2041 15.1939 11.867 16.524 11.5033 17.0001C10.2176 18.6837 7.64621 17.7016 6.78906 17.0001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></h3>
                     <a href="/products">Fitness & Sports Products</a>
                        <div class="dropdown-menu">
                        <a href="/products?category=fitness-accessories">Fitness Accessories</a>
@@ -688,13 +710,17 @@ class SportsFitECommerce:
                 </div>
                 <hr class="breakline">
                 <div class="menu-section">
-                    <h3>Contact Us</h3>
+                    <h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                        <path d="M4 10C4 6.22876 4 4.34315 5.17157 3.17157C6.34315 2 8.22876 2 12 2H13.5C17.2712 2 19.1569 2 20.3284 3.17157C21.5 4.34315 21.5 6.22876 21.5 10V14C21.5 17.7712 21.5 19.6569 20.3284 20.8284C19.1569 22 17.2712 22 13.5 22H12C8.22876 22 6.34315 22 5.17157 20.8284C4 19.6569 4 17.7712 4 14V10Z" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M9.79993 11.9741C9.37332 11.2302 9.16733 10.6228 9.04313 10.007C8.85943 9.09641 9.27981 8.20686 9.97622 7.63926C10.2706 7.39937 10.608 7.48133 10.782 7.79358L11.1749 8.49851C11.4864 9.05725 11.6421 9.33663 11.6112 9.63282C11.5803 9.929 11.3703 10.1702 10.9503 10.6527L9.79993 11.9741ZM9.79993 11.9741C10.6634 13.4797 12.0185 14.8356 13.5259 15.7001M13.5259 15.7001C14.2698 16.1267 14.8772 16.3327 15.493 16.4569C16.4036 16.6406 17.2931 16.2202 17.8607 15.5238C18.1006 15.2294 18.0187 14.892 17.7064 14.718L17.0015 14.3251C16.4427 14.0136 16.1634 13.8579 15.8672 13.8888C15.571 13.9197 15.3298 14.1297 14.8473 14.5497L13.5259 15.7001Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        <path d="M5 6L2.5 6M5 12L2.5 12M5 18H2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></h3>
                     <a href="/contact">Contact</a>
                 <hr class="breakline">
                 </div>
                 </div>
                 </nav>
-                <h1 class = "logo"><a href= "/" style="text-decoration: none; color: white;">SportsFit</a></h1>
+                <h1 class = "logo"><a href= "/" style="text-decoration: none; color: #ff9800;">SportsFit</a></h1>
             <div class="search-bar">
                 <form method="get" action="/search" style="display: flex; align-items: center; width: 100%;">
                     <input type="text" name="query" id="searchInput" placeholder="Search for products..." required>
@@ -941,69 +967,6 @@ class SportsFitECommerce:
                     <button onclick="nextSlide()">&#10095;</button>
                 </div>
             </div>
-            <div class="cards-section">
-            <h2 style="text-align: center; margin: 40px 0; font-size: 28px; font-weight: bold; color: #333;">Shop by Category</h2>
-            <div class="cards-container">
-                <!-- Fitness Accessories -->
-                <div class="card">
-                    <img src="https://m.media-amazon.com/images/I/71-reGiyUQL._SX569_.jpg" alt="Fitness Accessories">
-                    <div class="card-content">
-                        <h3>Fitness Accessories</h3>
-                        <p>Enhance your workouts with top-quality accessories.</p>
-                        <a href="products?category=fitness-accessories">Shop Now</a>
-                    </div>
-                </div>
-
-                <!-- Gym Equipment -->
-                <div class="card">
-                    <img src="https://m.media-amazon.com/images/I/81B2Y+uQF5L._SX569_.jpg" alt="Gym Equipment">
-                    <div class="card-content">
-                        <h3>Gym Equipment</h3>
-                        <p>Build your dream gym with premium equipment.</p>
-                        <a href="/products?category=gym-equipment">Shop Now</a>
-                    </div>
-                </div>
-
-                <!-- Sports Collection -->
-                <div class="card">
-                    <img src="https://m.media-amazon.com/images/I/619dp3YqKLL._SY450_.jpg" alt="Sports Collection">
-                    <div class="card-content">
-                        <h3>Sports Collection</h3>
-                        <p>Gear up for your favorite sports with top-notch products.</p>
-                        <a href="/products?category=sports-collection">Shop Now</a>
-                    </div>
-                </div>
-
-                <!-- Sports Wear -->
-                <div class="card">
-                    <img src="https://m.media-amazon.com/images/I/91Ov-x9d3qL._SX679_.jpg" alt="Sports Wear">
-                    <div class="card-content">
-                        <h3>Sports Wear</h3>
-                        <p>Stay stylish and comfortable during your workouts.</p>
-                        <a href="/products?category=sports-wear">Shop Now</a>
-                    </div>
-                </div>
-
-                <!-- Sports Accessories -->
-                <div class="card">
-                    <img src="https://m.media-amazon.com/images/I/71l2-gWOnpL._SX569_.jpg" alt="Sports Accessories">
-                    <div class="card-content">
-                        <h3>Sports Accessories</h3>
-                        <p>Find essential accessories for every sport.</p>
-                        <a href="/products?category=sports-accessories">Shop Now</a>
-                     </div>
-                  </div>
-                <!-- All Products -->
-                <div class="card">
-                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Sports/EnFRevmap/Build/PC/dumbells.jpg" alt="Sports Accessories">
-                    <div class="card-content">
-                        <h3>Exciting Products</h3>
-                        <p>Grab Now.</p>
-                        <a href="/products">Shop Now</a>
-                     </div>
-                  </div>
-                </div>
-            </div>
             <!-- workout home -->
             <div class="product-section">
                 <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Stripe_WAH.jpg" alt="header1">
@@ -1046,7 +1009,9 @@ class SportsFitECommerce:
                     <!-- Product 1 -->
                     <div class="product-cards">
                         <div class="circle-image">
+                        <a href="/products?category=gym-equipment">
                             <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Build/PC/dumbells.jpg" alt="Dumbbells">
+                        </a>
                         </div>
                         <div class="product-title">Dumbbells</div>
                     </div>
@@ -1054,7 +1019,9 @@ class SportsFitECommerce:
                     <!-- Product 2 -->
                     <div class="product-cards">
                         <div class="circle-image">
+                        <a href="/products?category=gym-equipment">
                             <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Build/PC/Gym-Sets.jpg" alt="Gym Sets">
+                        </a>
                         </div>
                         <div class="product-title">Gym Sets</div>
                     </div>
@@ -1062,7 +1029,9 @@ class SportsFitECommerce:
                     <!-- Product 3 -->
                     <div class="product-cards">
                         <div class="circle-image">
+                        <a href="/products?category=gym-equipment">
                             <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Build/PC/Hand-Grips.jpg" alt="Hand Grips">
+                        </a>
                         </div>
                         <div class="product-title">Hand Grips</div>
                     </div>
@@ -1070,7 +1039,9 @@ class SportsFitECommerce:
                     <!-- Product 4 -->
                     <div class="product-cards">
                         <div class="circle-image">
+                        <a href="/products?category=gym-equipment">
                             <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Build/PC/Explore-more.jpg" alt="Explore More">
+                        </a>
                         </div>
                         <div class="product-title">Explore More</div>
                     </div>
@@ -1086,7 +1057,9 @@ class SportsFitECommerce:
                     <!-- Product 1 -->
                     <div class="product-cards">
                         <div class="circle-image">
+                        <a href="/products?category=gym-equipment">
                             <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Equipment/PC/Barbells.jpg" alt="Barbells">
+                        </a>
                         </div>
                         <div class="product-title">Barbells</div>
                     </div>
@@ -1094,7 +1067,9 @@ class SportsFitECommerce:
                     <!-- Product 2 -->
                     <div class="product-cards">
                         <div class="circle-image">
+                        <a href="/products?category=gym-equipment">
                             <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Equipment/PC/Tummy-twister.jpg" alt="Tummy Twister">
+                        </a>
                         </div>
                         <div class="product-title">Tummy Twister</div>
                     </div>
@@ -1102,7 +1077,9 @@ class SportsFitECommerce:
                     <!-- Product 3 -->
                     <div class="product-cards">
                         <div class="circle-image">
+                        <a href="/products?category=gym-equipment">
                             <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Equipment/PC/Resistance-bands.jpg" alt="Resistance Bands">
+                        </a>
                         </div>
                         <div class="product-title">Resistance Bands</div>
                     </div>
@@ -1110,7 +1087,9 @@ class SportsFitECommerce:
                     <!-- Product 4 -->
                     <div class="product-cards">
                         <div class="circle-image">
+                        <a href="/products?category=gym-equipment">
                             <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Equipment/PC/Pull-up-bar.jpg" alt="Pull Up Bar">
+                        </a>
                         </div>
                         <div class="product-title">Pull Up Bar</div>
                     </div>
@@ -1118,7 +1097,9 @@ class SportsFitECommerce:
                     <!-- Product 5 -->
                     <div class="product-cards">
                         <div class="circle-image">
+                        <a href="/products?category=gym-equipment">
                             <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Equipment/PC/Skipping-rope.jpg" alt="Skipping Rope">
+                        </a>
                         </div>
                         <div class="product-title">Skipping Rope</div>
                     </div>
@@ -1126,7 +1107,9 @@ class SportsFitECommerce:
                     <!-- Product 6 -->
                     <div class="product-cards">
                         <div class="circle-image">
+                        <a href="/products?category=gym-equipment">
                             <img src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Equipment/PC/Push-up-bar.jpg" alt="Push Up Bar">
+                        </a>
                         </div>
                         <div class="product-title">Push Up Bar</div>
                     </div>
@@ -1138,30 +1121,118 @@ class SportsFitECommerce:
                 <div class="yoga-product-container">
                     <!-- Product 1 -->
                     <div class="yoga-product-card">
+                    <a href="/products?category=fitness-accessories">
                         <img class="yoga-product-image" src="https://m.media-amazon.com/images/G/31/img22/Sports/October/BAU/2.jpg" alt="Yoga Mat">
+                    </a>
                     </div>
 
                     <!-- Product 2 -->
                     <div class="yoga-product-card">
+                    <a href="/products?category=gym-equipment">
                         <img class="yoga-product-image" src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Boosturmind/PC/mats.jpg" alt="Medicine Balls">
+                    </a>
                     </div>
 
                     <!-- Product 3 -->
                     <div class="yoga-product-card">
+                    <a href="/products?category=gym-equipment">
                         <img class="yoga-product-image" src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Boosturmind/PC/Blocks.jpg" alt="Blocks">
+                    </a>
                     </div>
 
                     <!-- Product 4 -->
                     <div class="yoga-product-card">
+                    <a href="/products?category=gym-equipment">
                         <img class="yoga-product-image" src="https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Boosturmind/PC/Bands.jpg" alt="Bands">
+                    </a>
                     </div>
                 </div>
             </div>
-            <div class="study_logos">
-              <div><img style= "height: 800px; width: 800px;" src = 'https://m.media-amazon.com/images/G/31/img22/Sports/July/EnF/tips-to-control_new.jpg'></div>
-              <div><img style= "height: 800px; width: 800px;" src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Work-from-home-Yoga-poses_new.jpg'></div>
+            <div class="cards-section">
+            <h2 style="text-align: center; margin: 40px 0; font-size: 28px; font-weight: bold; color: #333;">Shop by Category</h2>
+            <div class="cards-container">
+                <!-- Fitness Accessories -->
+                <div class="card">
+                    <img src="https://images.meesho.com/images/products/304515040/tprnb_512.webp" alt="Fitness Accessories">
+                    <div class="card-content">
+                        <h3>Fitness Accessories</h3>
+                        <p>Enhance your workouts with top-quality accessories.</p>
+                        <a href="products?category=fitness-accessories">Shop Now</a>
+                    </div>
+                </div>
+
+                <!-- Gym Equipment -->
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/81B2Y+uQF5L._SX569_.jpg" alt="Gym Equipment">
+                    <div class="card-content">
+                        <h3>Gym Equipment</h3>
+                        <p>Build your dream gym with premium equipment.</p>
+                        <a href="/products?category=gym-equipment">Shop Now</a>
+                    </div>
+                </div>
+
+                <!-- Sports Collection -->
+                <div class="card">
+                    <img src="https://static.vecteezy.com/system/resources/previews/053/232/116/non_2x/a-man-running-with-a-beard-and-mustache-free-vector.jpg" alt="Sports Collection">
+                    <div class="card-content">
+                        <h3>Sports Collection</h3>
+                        <p>Gear up for your favorite sports with top-notch products.</p>
+                        <a href="/products?category=sports-collection">Shop Now</a>
+                    </div>
+                </div>
+
+                <!-- Sports Wear -->
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/91Ov-x9d3qL._SX679_.jpg" alt="Sports Wear">
+                    <div class="card-content">
+                        <h3>Sports Wear</h3>
+                        <p>Stay stylish and comfortable during your workouts.</p>
+                        <a href="/products?category=sports-wear">Shop Now</a>
+                    </div>
+                </div>
+
+                <!-- Sports Accessories -->
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71l2-gWOnpL._SX569_.jpg" alt="Sports Accessories">
+                    <div class="card-content">
+                        <h3>Sports Accessories</h3>
+                        <p>Find essential accessories for every sport.</p>
+                        <a href="/products?category=sports-accessories">Shop Now</a>
+                     </div>
+                  </div>
+                <!-- All Products -->
+                <div class="card">
+                    <img src="https://www.shutterstock.com/image-photo/young-surprised-strong-fitness-trainer-260nw-2471093951.jpg" alt="Sports Accessories">
+                    <div class="card-content">
+                        <h3>Exciting Products</h3>
+                        <p>Grab Now.</p>
+                        <a href="/products">Shop Now</a>
+                     </div>
+                  </div>
+                </div>
             </div>
-            <div class="fitness-destination">
+            <div>
+            <span class="study_logos">
+            <a href="/products?category=sports-wear">
+              <img src = 'https://m.media-amazon.com/images/G/31/img22/Sports/September/Gear-up.jpg'>
+              <img src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Gearup/Revised/Gear-up-section_02.jpg'>
+              <img src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Gearup/Revised/Gear-up-section_03.jpg'>
+              <img src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Gearup/Revised/Gear-up-section_04.jpg'>
+              <img src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Gearup/Revised/Gear-up-section_05.jpg'>
+              <img src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Gearup/Revised/Gear-up-section_06.jpg'>
+            </a>
+            </span>  
+            </div>
+       <div class = "customreview-section">
+          <h2 style="text-align: center; margin: 40px 0; font-size: 28px; font-weight: bold; color: #333;">Customer Review</h2>
+           <div class = "customer_rev">
+             <div class = "rev-box"><img style = "height: 250px;" src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Review/1_Review-MOB.jpg'></div>
+             <div class = "rev-box"><img style = "height: 250px;" src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Review/2_Review-MOB-2.jpg'></div>
+             <div class = "rev-box"><img style = "height: 250px;" src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Review/3_Review-MOB.jpg'></div>
+             <div class = "rev-box"><img style = "height: 250px;" src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Review/4_Review-MOB.jpg'></div>
+           </div>
+       </div>
+       <div class="fitness-destination">
              <div class="fitness-content">
              <h2 class="fitness-title">One-Stop Fitness Destination: Exercise & Fitness Store for Every Need</h2>
             <p>
@@ -1215,15 +1286,6 @@ class SportsFitECommerce:
         </div>
           <p class="cta">Explore our store today on <strong>SportsFit</strong> and embrace the path to a healthier, more active you!</p>
         </div>
-       </div>
-       <div class = "customreview-section">
-          <h2 style="text-align: center; margin: 40px 0; font-size: 28px; font-weight: bold; color: #333;">Customer Review</h2>
-           <div class = "customer_rev">
-             <div class = "rev-box"><img style = "height: 250px;" src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Review/1_Review-MOB.jpg'></div>
-             <div class = "rev-box"><img style = "height: 250px;" src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Review/2_Review-MOB-2.jpg'></div>
-             <div class = "rev-box"><img style = "height: 250px;" src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Review/3_Review-MOB.jpg'></div>
-             <div class = "rev-box"><img style = "height: 250px;" src = 'https://m.media-amazon.com/images/G/31/Sports/EnFRevmap/Review/4_Review-MOB.jpg'></div>
-           </div>
        </div>
             <div class="back-to-top">
               <button onclick="scrollToTop()">Back to Top</button>
